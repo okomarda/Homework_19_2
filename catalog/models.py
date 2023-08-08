@@ -12,7 +12,10 @@ class Product(models.Model):
 
 
     def __str__(self):
-        return f'{self.product_name} {self.description}'
+        return f'{self.product_name}, {self.description}, {self.product_price}'
+
+    #def presentation(self):
+     #   return f'{self.product.name}, {self.description}, {self.product_price}, {self.product_category}'
 
     class Meta:
         verbose_name = 'продукт'
