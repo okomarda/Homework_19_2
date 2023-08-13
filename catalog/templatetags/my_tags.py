@@ -5,5 +5,5 @@ register = template.Library()
 @register.filter()
 def mymedia(image):
     if image:
-        return f'media/{image}'
+        return f'/media/{image}'
     return 'нет картинки'
